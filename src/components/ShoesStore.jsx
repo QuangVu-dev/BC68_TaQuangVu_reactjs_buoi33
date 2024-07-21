@@ -1,8 +1,6 @@
-import { useState } from "react";
 import ProductList from "./ProductList";
 
 const ShoesStore = () => {
-  let [id, setId] = useState(0);
   let arrShoes = [
     {
       id: 1,
@@ -145,9 +143,6 @@ const ShoesStore = () => {
       image: "http://svcy3.myclass.vn/images/nike-air-max-270-react.png",
     },
   ];
-  function updateId(id) {
-    setId(id);
-  }
   return (
     <div className="container px-10">
       <h2 className="text-center font-bold text-4xl uppercase mt-5">
@@ -155,7 +150,7 @@ const ShoesStore = () => {
       </h2>
       <div className="grid grid-cols-4 gap-5 mt-5">
         {arrShoes.map((item, index) => {
-          return <ProductList item={item} updateId={updateId} />;
+          return <ProductList item={item} />;
         })}
       </div>
     </div>

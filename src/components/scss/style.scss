@@ -1,0 +1,32 @@
+.ant-btn {
+  border-radius: 0px;
+  height: 36px;
+  border: 1px solid black;
+  &:hover {
+    border-color: #4096ff;
+  }
+}
+
+.cart-btn {
+  border: 1px solid transparent;
+  height: 36px;
+
+  &:hover {
+    color: #4096ff;
+    border-color: #4096ff;
+    background: #ffffff;
+  }
+}
+
+.ant-modal {
+  top: 0px;
+  width: 70% !important;
+
+  .ant-modal-content {
+    border-radius: 0px;
+
+    .ant-footer-modal {
+      display: none !important;
+    }
+  }
+}
